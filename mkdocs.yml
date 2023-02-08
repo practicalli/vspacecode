@@ -120,7 +120,7 @@ extra:
 # Navigation
 nav:
   - Introduction:
-      - Overview: introduction/index.md
+      - index.md
       - REPL Workflow: introduction/repl-workflow.md
       - Contributing: introduction/contributing.md
       - Writing Tips: introduction/writing-tips.md
