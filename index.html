@@ -12,33 +12,33 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Practical guide to Clojure programming with VSpaceCode and Calva" name="description"/>
 <meta content="Practicalli" name="author"/>
-<link href="https://practical.li/vspacecode/introduction/" rel="canonical"/>
-<link href="repl-workflow/" rel="next"/>
-<link href="../assets/favicon.svg" rel="icon"/>
+<link href="https://practical.li/vspacecode/" rel="canonical"/>
+<link href="introduction/repl-workflow/" rel="next"/>
+<link href="assets/favicon.svg" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.0.11" name="generator"/>
-<title>Overview - Practicalli VSpaceCode</title>
-<link href="../assets/stylesheets/main.0d440cfe.min.css" rel="stylesheet"/>
-<link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<title>Clojure programming with VSpaceCode - Practicalli VSpaceCode</title>
+<link href="assets/stylesheets/main.0d440cfe.min.css" rel="stylesheet"/>
+<link href="assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<link href="../assets/stylesheets/extra.css" rel="stylesheet"/>
-<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="assets/stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <meta content="website" property="og:type"/>
-<meta content="Overview - Practicalli VSpaceCode" property="og:title"/>
+<meta content="Clojure programming with VSpaceCode - Practicalli VSpaceCode" property="og:title"/>
 <meta content="Practical guide to Clojure programming with VSpaceCode and Calva" property="og:description"/>
-<meta content="https://practical.li/vspacecode/assets/images/social/introduction/index.png" property="og:image"/>
+<meta content="https://practical.li/vspacecode/assets/images/social/index.png" property="og:image"/>
 <meta content="image/png" property="og:image:type"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
-<meta content="https://practical.li/vspacecode/introduction/" property="og:url"/>
+<meta content="https://practical.li/vspacecode/" property="og:url"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Overview - Practicalli VSpaceCode" name="twitter:title"/>
+<meta content="Clojure programming with VSpaceCode - Practicalli VSpaceCode" name="twitter:title"/>
 <meta content="Practical guide to Clojure programming with VSpaceCode and Calva" name="twitter:description"/>
-<meta content="https://practical.li/vspacecode/assets/images/social/introduction/index.png" name="twitter:image"/>
-<link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+<meta content="https://practical.li/vspacecode/assets/images/social/index.png" name="twitter:image"/>
+<link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -49,7 +49,7 @@
                 body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
                 body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
                 body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-                </style><script src="../assets/javascripts/glightbox.min.js"></script></head>
+                </style><script src="assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="teal" data-md-color-primary="blue" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -79,8 +79,8 @@ Visit <a href="https://practical.li/">Practicalli Website</a> for more books on 
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="Practicalli VSpaceCode" class="md-header__button md-logo" data-md-component="logo" href=".." title="Practicalli VSpaceCode">
-<img alt="logo" src="../assets/images/practicalli-logo.png"/>
+<a aria-label="Practicalli VSpaceCode" class="md-header__button md-logo" data-md-component="logo" href="." title="Practicalli VSpaceCode">
+<img alt="logo" src="assets/images/practicalli-logo.png"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
@@ -95,7 +95,7 @@ Visit <a href="https://practical.li/">Practicalli Website</a> for more books on 
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Overview
+              Clojure programming with VSpaceCode
             
           </span>
 </div>
@@ -161,8 +161,8 @@ Visit <a href="https://practical.li/">Practicalli Website</a> for more books on 
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="Practicalli VSpaceCode" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Practicalli VSpaceCode">
-<img alt="logo" src="../assets/images/practicalli-logo.png"/>
+<a aria-label="Practicalli VSpaceCode" class="md-nav__button md-logo" data-md-component="logo" href="." title="Practicalli VSpaceCode">
+<img alt="logo" src="assets/images/practicalli-logo.png"/>
 </a>
     Practicalli VSpaceCode
   </label>
@@ -180,7 +180,7 @@ Visit <a href="https://practical.li/">Practicalli Website</a> for more books on 
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
 <input checked="" class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index md-nav__link--active">
-<a href="./">Introduction</a>
+<a href=".">Introduction</a>
 <label for="__nav_1">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -192,17 +192,17 @@ Visit <a href="https://practical.li/">Practicalli Website</a> for more books on 
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="repl-workflow/">
+<a class="md-nav__link" href="introduction/repl-workflow/">
         REPL Workflow
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="contributing/">
+<a class="md-nav__link" href="introduction/contributing/">
         Contributing
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="writing-tips/">
+<a class="md-nav__link" href="introduction/writing-tips/">
         Writing Tips
       </a>
 </li>
@@ -210,24 +210,24 @@ Visit <a href="https://practical.li/">Practicalli Website</a> for more books on 
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../install/">
+<a class="md-nav__link" href="install/">
         Install
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../guide/original.md">
+<a class="md-nav__link" href="guide/original.md">
         Original Guide
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../guide/quick-start/">
+<a class="md-nav__link" href="guide/quick-start/">
         Quick Start
       </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../guide/clojure/">Clojure Workflow</a>
+<a href="guide/clojure/">Clojure Workflow</a>
 </div>
 <nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_5">
@@ -320,7 +320,7 @@ Visit <a href="https://practical.li/">Practicalli Website</a> for more books on 
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "navigation.top", "content.code.annotate", "content.tabs.link", "navigation.instant", "navigation.tracking", "navigation.indexes"], "search": "../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../assets/javascripts/bundle.6df46069.min.js"></script>
+<script id="__config" type="application/json">{"base": ".", "features": ["announce.dismiss", "navigation.top", "content.code.annotate", "content.tabs.link", "navigation.instant", "navigation.tracking", "navigation.indexes"], "search": "assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="assets/javascripts/bundle.6df46069.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
