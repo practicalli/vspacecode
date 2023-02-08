@@ -169,7 +169,7 @@ Select **Mark Done** to close the wizard
     ++ctrl+shift+"p"++ and searching `Preference: Open Settings (JSON)` and `Preference: Open Keyboard Shortcuts (JSON)` in turn. ++ctrl+"s"++ to save the highlighted file.
 
 
-### Remap Calva Esc key
+### Calva Keybinding remap
 
 Calva extension adds `Esc` as a keyboard shortcut for clearing evaluation results.  This binding breaks vim-style editing in VSpaceCode, so the Calva keyboard shortcut should be remapped.
 
@@ -191,21 +191,17 @@ Add this code before the final closing bracket, `}`, in the file.
   }
 ```
 
-<!--
-## Add the Calva specific keyboard shortcuts
+Remap Vim insert mode keybinding to go into normal mode by adding the following to your user settings:
 
-> Required for VSpaceCode version 0.8.5 or earlier. Later version will include the [Clojure keybindings for the Calva extension pull request](https://github.com/VSpaceCode/VSpaceCode/pull/154).
+```json title="settings.json"
 
-`SPC f f` and select the `~/.vscode/extensions/vspacecode.vspacecode-0.8.5/package.json` file.
-
-`/` followed by `Major` to find the location to add the clojure keyboard shortcuts
-
-Open the [Clojure keybindings pull request](https://github.com/VSpaceCode/VSpaceCode/pull/154) and copy the code from the package.json change to your local package.json file.
-
-`SPC f s` to save the file and the keyboard shortcuts will be available when opening a Clojure file.
-
--->
-
+"vim.insertModeKeyBindings": [
+    {
+        "before": ["f", "d"],
+        "after": ["<esc>"]
+    }
+]
+```
 
 ## Confirm installation
 
