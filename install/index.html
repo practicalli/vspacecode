@@ -252,8 +252,8 @@ Visit <a href="https://practical.li/">Practicalli Website</a> for more books on 
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#remap-calva-esc-key">
-    Remap Calva Esc key
+<a class="md-nav__link" href="#calva-keybinding-remap">
+    Calva Keybinding remap
   </a>
 </li>
 </ul>
@@ -332,8 +332,8 @@ Visit <a href="https://practical.li/">Practicalli Website</a> for more books on 
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#remap-calva-esc-key">
-    Remap Calva Esc key
+<a class="md-nav__link" href="#calva-keybinding-remap">
+    Calva Keybinding remap
   </a>
 </li>
 </ul>
@@ -478,7 +478,7 @@ Enter the login account password when prompted</p>
 <p>Save the changes by opening the <code>settings.json</code> and <code>keybindings.json</code>.</p>
 <p><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd>p</kbd></span> and searching <code>Preference: Open Settings (JSON)</code> and <code>Preference: Open Keyboard Shortcuts (JSON)</code> in turn. <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>s</kbd></span> to save the highlighted file.</p>
 </details>
-<h3 id="remap-calva-esc-key">Remap Calva Esc key<a class="headerlink" href="#remap-calva-esc-key" title="Permanent link">λ︎</a></h3>
+<h3 id="calva-keybinding-remap">Calva Keybinding remap<a class="headerlink" href="#calva-keybinding-remap" title="Permanent link">λ︎</a></h3>
 <p>Calva extension adds <code>Esc</code> as a keyboard shortcut for clearing evaluation results.  This binding breaks vim-style editing in VSpaceCode, so the Calva keyboard shortcut should be remapped.</p>
 <p><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd>p</kbd></span> to open the VSCode command menu, type <code>keyboard</code> to narrow the command list and select <code>Preferences: Open keyboard shortcuts (JSON)</code>.</p>
 <p>Edit the <code>.config/Code/User/keybindings.json</code> file and add the following configuration to remove <code>Esc</code> from the <code>calva.clearInlineResults</code> command and create a new keyboard shortcut for that command using <code>Shift Esc</code></p>
@@ -493,20 +493,14 @@ Enter the login account password when prompted</p>
 <a href="#__codelineno-3-8" id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">    </span><span class="nt">"when"</span><span class="p">:</span><span class="w"> </span><span class="s2">"editorTextFocus &amp;&amp; !editorHasMultipleSelections &amp;&amp; !editorReadOnly &amp;&amp; !hasOtherSuggestions &amp;&amp; !suggestWidgetVisible &amp;&amp; editorLangId == 'clojure'"</span>
 <a href="#__codelineno-3-9" id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">  </span><span class="p">}</span>
 </code></pre></div>
-<!--
-## Add the Calva specific keyboard shortcuts
-
-> Required for VSpaceCode version 0.8.5 or earlier. Later version will include the [Clojure keybindings for the Calva extension pull request](https://github.com/VSpaceCode/VSpaceCode/pull/154).
-
-`SPC f f` and select the `~/.vscode/extensions/vspacecode.vspacecode-0.8.5/package.json` file.
-
-`/` followed by `Major` to find the location to add the clojure keyboard shortcuts
-
-Open the [Clojure keybindings pull request](https://github.com/VSpaceCode/VSpaceCode/pull/154) and copy the code from the package.json change to your local package.json file.
-
-`SPC f s` to save the file and the keyboard shortcuts will be available when opening a Clojure file.
-
--->
+<p>Remap Vim insert mode keybinding to go into normal mode by adding the following to your user settings:</p>
+<div class="highlight"><span class="filename">settings.json</span><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nt">"vim.insertModeKeyBindings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="p">{</span>
+<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">        </span><span class="nt">"before"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"f"</span><span class="p">,</span><span class="w"> </span><span class="s2">"d"</span><span class="p">],</span>
+<a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">        </span><span class="nt">"after"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"&lt;esc&gt;"</span><span class="p">]</span>
+<a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">    </span><span class="p">}</span>
+<a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="p">]</span>
+</code></pre></div>
 <h2 id="confirm-installation">Confirm installation<a class="headerlink" href="#confirm-installation" title="Permanent link">λ︎</a></h2>
 <p>To confirm that VSpaceCode is working by opening an editor window.</p>
 <p>Select the Explorer Icon in the left hand menu, then select <em>Open Folder...</em> </p>
