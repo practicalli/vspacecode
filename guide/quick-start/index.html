@@ -16,7 +16,7 @@
 <link href="../../install/" rel="prev"/>
 <link href="../clojure/" rel="next"/>
 <link href="../../assets/favicon.svg" rel="icon"/>
-<meta content="mkdocs-1.4.2, mkdocs-material-9.0.11" name="generator"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.0.12" name="generator"/>
 <title>Quick Start - Practicalli VSpaceCode</title>
 <link href="../../assets/stylesheets/main.0d440cfe.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
@@ -444,15 +444,18 @@ Visit <a href="https://practical.li/">Practicalli Website</a> for more books on 
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>clojure -M:dev/reloaded:repl/rebel
 </code></pre></div></p>
 </details>
-<p><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd class="key-single-quote">'</kbd></span> to jack-in to a Clojure REPL for the project.  This starts an external REPL process and connects to it.</p>
+<p><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd class="key-double-quote">"</kbd></span> to jack-in to a Clojure REPL for the project.  This starts an external REPL process and connects to it.</p>
 <blockquote>
-<p>Alternative, use <span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd class="key-double-quote">"</kbd></span> to connect to an external REPL process that has already started.</p>
+<p>Alternative, use <span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd class="key-single-quote">'</kbd></span> to connect to an external REPL process that has already started.</p>
 </blockquote>
 <p>Select either <code>deps.edn</code> for Clojure CLI or <code>Leiningen</code> when prompted for the project type</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://raw.githubusercontent.com/practicalli/graphic-design/live/vspacecode/screenshots/vspacecode-clojure-repl-jack-in-leiningen.png"><img alt="VS Code - Calva - Start REPL - nREPL button" src="https://raw.githubusercontent.com/practicalli/graphic-design/live/vspacecode/screenshots/vspacecode-clojure-repl-jack-in-leiningen.png"/></a></p>
 <p>Wait a few moments for the REPL to start.</p>
 <p>A new REPL window will open when the Clojure REPL is ready</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/images/vspacecode-calva-jack-in-repl-output.png"><img alt="VS Code - Calva - Start REPL - nREPL button" src="/images/vspacecode-calva-jack-in-repl-output.png"/></a></p>
+<p>The VSCode Status Bar shows when the Clojure REPL is connected</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vspacecode-clojure-status-bar-repl-connected-light.png#only-light"><img alt="VSpaceCode Status Bar showing REPL connected" src="https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vspacecode-clojure-status-bar-repl-connected-light.png#only-light"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vspacecode-clojure-status-bar-repl-connected-dark.png#only-dark"><img alt="VSpaceCode Status Bar showing REPL connected" src="https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vspacecode-clojure-status-bar-repl-connected-dark.png#only-dark"/></a></p>
 <h3 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">λ︎</a></h3>
 <p>If the REPL did not start, the nREPL link in the bottom blue bar will show the word "Disconnected".</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/images/vscode-calva-clojure-repl-connect-nrepl-button.png"><img alt="VS Code - Calva - Start REPL - nREPL button" src="/images/vscode-calva-clojure-repl-connect-nrepl-button.png"/></a></p>
@@ -487,9 +490,8 @@ Visit <a href="https://practical.li/">Practicalli Website</a> for more books on 
 </div>
 </input></input></div>
 <h3 id="connecting-to-external-repl">Connecting to external REPL<a class="headerlink" href="#connecting-to-external-repl" title="Permanent link">λ︎</a></h3>
-<p><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-single-quote">'</kbd></span> to connect to an external REPL process.</p>
+<p><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-single-quote">'</kbd></span> to connect to an external REPL process from Calva / VSpaceCode.</p>
 <p>For the project type select either <strong>deps.edn</strong> for Clojure CLI or Leiningen when prompted</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/images/vscode-calva-clojure-repl-connect-project-type.png"><img alt="VS Code - Calva - Start REPL - nREPL button" src="/images/vscode-calva-clojure-repl-connect-project-type.png"/></a></p>
 <p>Confirm the <strong>host</strong> and <strong>port</strong> of the REPL, this should be automatically detected. Host and port details were shown in the output when running the REPL in the terminal.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/images/vscode-calva-connect-host-and-port.png"><img alt="Calva - connect to running REPL" src="/images/vscode-calva-connect-host-and-port.png"/></a></p>
 <p>Wait a few moments for the REPL to start.</p>
@@ -710,7 +712,7 @@ TODO: is this configurable in Calva.</p>
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2023</span>
 </small>
 </div>
 </article>
@@ -761,6 +763,6 @@ TODO: is this configurable in Calva.</p>
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "navigation.top", "content.code.annotate", "content.tabs.link", "navigation.instant", "navigation.tracking", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../../assets/javascripts/bundle.6df46069.min.js"></script>
+<script src="../../assets/javascripts/bundle.4b2c34cd.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
