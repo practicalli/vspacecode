@@ -28,9 +28,9 @@ For Clojure CLI, aliases from the project `deps.edn` can be selected to modify t
     clojure -M:dev/reloaded:repl/rebel
     ```
 
-++comma++ ++single-quote++ to jack-in to a Clojure REPL for the project.  This starts an external REPL process and connects to it.
+++comma++ ++double-quote++ to jack-in to a Clojure REPL for the project.  This starts an external REPL process and connects to it.
 
-> Alternative, use ++comma++ ++double-quote++ to connect to an external REPL process that has already started.
+> Alternative, use ++comma++ ++single-quote++ to connect to an external REPL process that has already started.
 
 Select either `deps.edn` for Clojure CLI or `Leiningen` when prompted for the project type
 
@@ -90,7 +90,7 @@ In the terminal, change to the folder than contains your project, e.g. `cd proje
 
 ### Connecting to external REPL
 
-++ctrl+single-quote++ to connect to an external REPL process.
+++ctrl+single-quote++ to connect to an external REPL process from Calva / VSpaceCode.
 
 For the project type select either **deps.edn** for Clojure CLI or Leiningen when prompted
 
