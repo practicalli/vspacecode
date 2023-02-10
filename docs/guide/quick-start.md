@@ -42,6 +42,11 @@ A new REPL window will open when the Clojure REPL is ready
 
 ![VS Code - Calva - Start REPL - nREPL button](/images/vspacecode-calva-jack-in-repl-output.png)
 
+The VSCode Status Bar shows when the Clojure REPL is connected
+
+![VSpaceCode Status Bar showing REPL connected](https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vspacecode-clojure-status-bar-repl-connected-light.png#only-light)
+![VSpaceCode Status Bar showing REPL connected](https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vspacecode-clojure-status-bar-repl-connected-dark.png#only-dark)
+
 
 ### Troubleshooting
 
@@ -94,7 +99,6 @@ In the terminal, change to the folder than contains your project, e.g. `cd proje
 
 For the project type select either **deps.edn** for Clojure CLI or Leiningen when prompted
 
-![VS Code - Calva - Start REPL - nREPL button](/images/vscode-calva-clojure-repl-connect-project-type.png)
 
 
 Confirm the **host** and **port** of the REPL, this should be automatically detected. Host and port details were shown in the output when running the REPL in the terminal.
