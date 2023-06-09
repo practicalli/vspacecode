@@ -1,13 +1,10 @@
-# Contributing to Practicalli Clojure
+# Contributing to Practicalli
 
-How to effectivley contribute to Practicalli Clojure
-
-[practicalli/neovim](https://github.com/practicalli/clojure/){target=_blank} is written in markdown and uses MkDocs to generate the website via a GitHub action.
+Practicalli books are written in markdown and use MkDocs to generate the published website via a GitHub workflow.  MkDocs can also run a local server using the `make docs` target from the `Makefile`
 
 By submitting content ideas and corrections you are agreeing they can be used in this book under the [Creative Commons Attribution ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/){target=_blank}.  Attribution will be detailed via [GitHub contributors](https://github.com/practicalli/clojure/graphs/contributors){target=_blank}.
 
 All content and interaction with any persons or systems must be done so with respect and within the Practicalli Code of Conduct.
-
 
 ## Book status
 
@@ -25,7 +22,7 @@ All content and interaction with any persons or systems must be done so with res
 
 If something doesnt seem quite right or something is missing from the book, please [raise an issue via the GitHub repository](https://github.com/practicalli/clojure/issues){target=_blank} explaining in as much detail as you can.
 
-Raising an issue before creating a pull request will save you and the maintainer time.
+**Raising an issue before creating a pull request will save you and the maintainer time**.
 
 
 ### Considering a Pull request?
