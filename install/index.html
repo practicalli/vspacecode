@@ -29,7 +29,7 @@
         <link rel="next" href="../guide/quick-start/">
       
       <link rel="icon" href="../assets/favicon.svg">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.16">
     
     
       
@@ -524,8 +524,8 @@ Practicalli VSpaceCode is a new book under development. Visit <a href="https://p
   
   
     <li class="md-nav__item">
-      <a href="../guide/original.md" class="md-nav__link">
-        Original Guide
+      <a href="../guide/quick-start/" class="md-nav__link">
+        Quick Start
       </a>
     </li>
   
@@ -538,10 +538,40 @@ Practicalli VSpaceCode is a new book under development. Visit <a href="https://p
   
   
   
-    <li class="md-nav__item">
-      <a href="../guide/quick-start/" class="md-nav__link">
-        Quick Start
-      </a>
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../guide/clojure/">Clojure Workflow</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Clojure Workflow
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -567,22 +597,42 @@ Practicalli VSpaceCode is a new book under development. Visit <a href="https://p
             
           
         
+          
+        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../guide/clojure/">Clojure Workflow</a>
+          <a href="../configuration/">Configuration</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
           
         </div>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
-          Clojure Workflow
+          Configuration
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/theme-font-configuration/" class="md-nav__link">
+        Theme & Font
+      </a>
+    </li>
+  
+
             
           
         </ul>
@@ -706,7 +756,7 @@ Practicalli VSpaceCode is a new book under development. Visit <a href="https://p
 <h1 id="vscode">VSCode<a class="headerlink" href="#vscode" title="Permanent link">λ︎</a></h1>
 <p>Install VS Code with the VSpaceCode and Calva Extensions</p>
 <div class="admonition info">
-<p class="admonition-title">VSCode version 1.75 used in this guide</p>
+<p class="admonition-title">VSCode version 1.79 used in this guide</p>
 </div>
 <p><a class="glightbox" href="https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vscode-install-page-linux.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="VSCode Install page" src="https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vscode-install-page-linux.png" /></a></p>
 <h2 id="install-vscode">Install VSCode<a class="headerlink" href="#install-vscode" title="Permanent link">λ︎</a></h2>
@@ -718,9 +768,9 @@ Practicalli VSpaceCode is a new book under development. Visit <a href="https://p
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Change to the directory the <code>.deb</code> file was downloaded to</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>dpkg<span class="w"> </span>--install<span class="w">  </span>code_1.75.0-1675266613_amd64.deb
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>./code_1.79.2-1686734195_amd64.deb
 </code></pre></div>
-Enter the login account password when prompted</p>
+Enter login account password when prompted</p>
 </div>
 <div class="tabbed-block">
 <p>Open (double click) the file.  The Ubuntu software studio will open.  Click the Install button.</p>
@@ -855,7 +905,7 @@ Enter the login account password when prompted</p>
 </code></pre></div>
 <h2 id="confirm-installation">Confirm installation<a class="headerlink" href="#confirm-installation" title="Permanent link">λ︎</a></h2>
 <p>To confirm that VSpaceCode is working by opening an editor window.</p>
-<p>Select the Explorer Icon in the left hand menu, then select <em>Open Folder...</em>  </p>
+<p>Select the Explorer Icon in the left hand menu, then select <em>Open Folder...</em></p>
 <p><a class="glightbox" href="https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vspacecode-navigation-explorer-light.png#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="VSpaceCode navigation bar - explorer" loading="lazy" src="https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vspacecode-navigation-explorer-light.png#only-light" /></a>
 <a class="glightbox" href="https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vspacecode-navigation-explorer-dark.png#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="VSpaceCode navigation bar - explorer" loading="lazy" src="https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vspacecode-navigation-explorer-dark.png#only-dark" /></a></p>
 <p>Open a Clojure project to confirm the Calva and VSpaceCode extension are working (or any text file to test VSpaceCode).</p>
@@ -871,7 +921,7 @@ Enter the login account password when prompted</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 18, 2023</span>
       
     
   </small>
@@ -1026,7 +1076,7 @@ Enter the login account password when prompted</p>
     <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.tracking"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.b4d07000.min.js"></script>
+      <script src="../assets/javascripts/bundle.a51614de.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
