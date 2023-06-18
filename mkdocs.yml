@@ -133,3 +133,6 @@ nav:
   - Quick Start: guide/quick-start.md
   - Clojure Workflow:
       - guide/clojure/index.md
+  - Configuration:
+      - configuration/index.md
+      - Theme & Font: configuration/theme-font-configuration.md
