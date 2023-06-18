@@ -150,11 +150,11 @@ Select **Mark Done** to close the wizard
     ![VSCode VSpaceCode extension - Getting Started with VSpaceCode](https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vscode-extension-vspacecode-get-started.png)
 
     If the wizard still does not run, quit VSCode and remove `$HOME/.vscode` and `$HOME/.config/Code` directories to ensure a clean starting point (backing up the User settings.json and keybindings.json if any useful configurations were added on top of the VSpaceCode configuration).
-   
+
     All extensions must be installed again.
-    
+
     If the wizard keeps failing, use the Manual configuration approach
-    
+
 
 ??? INFO "Manual Configuration"
     Follow the [manual configuration commands](https://vspacecode.github.io/docs/#manual-configuration-optional) if the automatic setup failed or was not followed.
@@ -165,7 +165,7 @@ Select **Mark Done** to close the wizard
     ![VSpaceCode configure default settings and key bindings](https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vspacecode-command-configure-default-settings-keybindings-dark.png#only-dark)
 
     Save the changes by opening the `settings.json` and `keybindings.json`.
-   
+
     ++ctrl+shift+"p"++ and searching `Preference: Open Settings (JSON)` and `Preference: Open Keyboard Shortcuts (JSON)` in turn. ++ctrl+"s"++ to save the highlighted file.
 
 
@@ -208,7 +208,7 @@ Remap Vim insert mode keybinding to go into normal mode by adding the following 
 To confirm that VSpaceCode is working by opening an editor window.
 
 
-Select the Explorer Icon in the left hand menu, then select *Open Folder...*  
+Select the Explorer Icon in the left hand menu, then select *Open Folder...*
 
 ![VSpaceCode navigation bar - explorer](https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vspacecode-navigation-explorer-light.png#only-light){loading=lazy}
 ![VSpaceCode navigation bar - explorer](https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vspacecode-navigation-explorer-dark.png#only-dark){loading=lazy}
