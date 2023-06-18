@@ -2,7 +2,7 @@
 
 Install VS Code with the VSpaceCode and Calva Extensions
 
-!!! INFO "VSCode version 1.75 used in this guide"
+!!! INFO "VSCode version 1.79 used in this guide"
 
 ![VSCode Install page](https://raw.githubusercontent.com/practicalli/graphic-design/live/editors/vscode-install-page-linux.png)
 
@@ -16,9 +16,9 @@ Install VS Code with the VSpaceCode and Calva Extensions
         Change to the directory the `.deb` file was downloaded to
 
         ```shell
-        sudo dpkg --install  code_1.75.0-1675266613_amd64.deb
+        sudo apt install ./code_1.79.2-1686734195_amd64.deb
         ```
-        Enter the login account password when prompted
+        Enter login account password when prompted
 
     === "Software Center"
         Open (double click) the file.  The Ubuntu software studio will open.  Click the Install button.
