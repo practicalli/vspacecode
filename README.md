@@ -48,7 +48,7 @@ By submitting content ideas and corrections you are agreeing they can be used in
 
 The sponsorship funds are used solely for the continued development of [Practicalli series of books and videos](https://practical.li/)
 
-Thank you to [Cognitect](https://www.cognitect.com/), [Nubank](https://nubank.com.br/) and a wide range of other [sponsors](https://github.com/sponsors/practicalli-johnny#sponsors) for your continued support
+Thanks to [Cognitect](https://www.cognitect.com/), [Nubank](https://nubank.com.br/) and a wide range of other [sponsors](https://github.com/sponsors/practicalli-johnny#sponsors) for your continued support
 
 
 ## GitHub Actions
