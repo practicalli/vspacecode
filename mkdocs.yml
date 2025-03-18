@@ -29,7 +29,7 @@ theme:
     - navigation.indexes # Nav sections can have files
     - navigation.instant # Avoid page reloading for internal links
     - navigation.top
-    - navigation.tracking # Update URL with anchor
+    - navigation.tracking # Update URL with sub-heading anchor names
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -39,7 +39,6 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -68,7 +67,8 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      url_download: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -111,6 +111,8 @@ extra:
     provider: google
     property: G-ZRNZJBJ4Q8
   social:
+    - icon: material/web
+      link: https://practical.li/
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/jr0cket/
     - icon: fontawesome/brands/slack
