@@ -7,3 +7,4 @@
 - dev: practicalli standard CI workflows and configs
 - mkdocs: practicalli custom css rounded buttons
 - dev: set markdown and make as github repository language attributes
+- dev: use inclusive git ignore patters
