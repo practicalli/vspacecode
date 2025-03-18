@@ -9,3 +9,4 @@
 - dev: set markdown and make as github repository language attributes
 - dev: use inclusive git ignore patters
 - readme: update CI status badges
+- dev: update makefile with practicalli standard task
