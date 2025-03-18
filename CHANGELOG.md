@@ -5,3 +5,4 @@
 - dev: checkout action v4 & sparse-checkout in GitHub workflows
 - mdocs: emoji extension update for material 9.4
 - dev: practicalli standard CI workflows and configs
+- mkdocs: practicalli custom css rounded buttons
