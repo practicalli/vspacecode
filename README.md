@@ -7,6 +7,16 @@
 ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝   ╚═╝   ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝
 ```
 
+## Book Overview
+
+VSpaceCode provides an excellent development experience on top of VSCode and Practicalli VSpaceCode guides you through the setup and use for Clojure development.
+
+VSpaceCode is a configuration for VSCode that makes the editor fully keyboard driven and provides excellent vim-style editing experience, without the need of hooking Neovim up in the background.
+
+VSpaceCode is as simple to use as pressing the `Space` key for the main menu and `,` (comma) key for a language specific menu.
+
+VSpaceCode includes menus and commands to call Clojure specific commands using the Calva plugin.
+
 ## Book status
 
 [![Publish Book](https://github.com/practicalli/vspacecode/actions/workflows/publish-book.yaml/badge.svg)](https://github.com/practicalli/vspacecode/actions/workflows/publish-book.yaml) [![pages-build-deployment](https://github.com/practicalli/vspacecode/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/practicalli/vspacecode/actions/workflows/pages/pages-build-deployment)
@@ -20,36 +30,39 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/practicalli/vspacecode?style=for-the-badge&label=github%20contributors)
 
 
-## License
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-<a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a>
- <a property="dct:title" rel="cc:attributionURL" href="https://github.com/practicalli/clojure">Practicalli Clojure </a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://practical.li/vscode">Practicalli VSpaceCode</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0 </a></p>
+## Creative commons license
 
+<div style="width:95%; margin:auto;">
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+  This work is licensed under a Creative Commons Attribution 4.0 ShareAlike License (including images & stylesheets).
+</div>
 
 ## Contributing
 
-Issues and pull requests are most welcome.  Please detail issues as much as you can.  Pull requests are simpler to work with when they are specific to a page or at most a section.  The smaller the change the quicker it is to review and merge.
+Issues and pull requests are most welcome although it is the maintainers discression as to if they are applicable.  Please detail issues as much as you can.  Pull requests are simpler to work with when they are specific to a page or at most a section.  The smaller the change the quicker it is to review and merge.
 
-Please [see the detailed contributing section of the book](https://practical.li/introduction/contributing/) before raising an issue or pull request
+Please read the [detailed Practicalli contributing page](https://practical.li/contributing/) before raising an issue or pull request to avoid disapointment.
 
-* [Kanban board of issues](https://github.com/practicalli/vspacecode/projects/1)
 * [Current Issues](https://github.com/practicalli/vspacecode/issues)
 * [Current pull requests](https://github.com/practicalli/vspacecode/pulls)
 
-[Practicalli Clojure CLI Config](clojure/clojure-cli/practicalli-config.md) provides a user level configuration used in this guide and issues and pull requests can also be made there.
+[Practicalli Clojure CLI Config](clojure/clojure-cli/practicalli-config.md) provides a user level configuration providing aliases for community tools used throughout this guide.  Issues and pull requests can also be made via its GitHub repository.
 
-By submitting content ideas and corrections you are agreeing they can be used in this workshop under the [Creative Commons Attribution ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).  Attribution will be detailed via [GitHub contributors](https://github.com/practicalli/vspacecode/graphs/contributors).
-
+By submitting content ideas and corrections you are agreeing they can be used in any work by Practicalli under the [Creative Commons Attribution ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).  Attribution will be detailed via [GitHub contributors](https://github.com/practicalli/clojure/graphs/contributors).
 
 ## Sponsor Practicalli
 
 [![Sponsor Practicalli via GitHub](https://raw.githubusercontent.com/practicalli/graphic-design/live/buttons/practicalli-github-sponsors-button.png)](https://github.com/sponsors/practicalli-johnny/)
 
-The sponsorship funds are used solely for the continued development of [Practicalli series of books and videos](https://practical.li/)
+All sponsorship funds are used to support the continued development of [Practicalli series of books and videos](https://practical.li/), although most work is done at personal cost and time.
 
 Thanks to [Cognitect](https://www.cognitect.com/), [Nubank](https://nubank.com.br/) and a wide range of other [sponsors](https://github.com/sponsors/practicalli-johnny#sponsors) for your continued support
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=practicalli/vspacecode&type=Date)](https://star-history.com/#practicalli/vspacecode&Date)
 
 
 ## GitHub Actions
@@ -67,13 +80,13 @@ Publish book workflow installs Material for MkDocs version 9
 
 Install mkdocs version 9 using the Python pip package manager
 
-```bash
-pip install mkdocs-material=="9.*"
+```shell
+pip install mkdocs-material=="9.5"
 ```
 
 Install the plugins used by the Practicalli site using Pip (these are also installed in the GitHub Action workflow)
 
-```bash
+```shell
 pip3 install mkdocs-material mkdocs-callouts mkdocs-glightbox mkdocs-git-revision-date-localized-plugin mkdocs-redirects pillow cairosvg
 ```
 
@@ -81,20 +94,22 @@ pip3 install mkdocs-material mkdocs-callouts mkdocs-glightbox mkdocs-git-revisio
 
 Fork the GitHub repository and clone that fork to your computer,
 
-```bash
+```shell
 git clone https://github.com/<your-github-account>/<repository>.git
 ```
 
 Run a local server from the root of the cloned project
 
-```bash
+```shell
 make docs
 ```
 
 The website will open at <http://localhost:8000>
 
 If making smaller changes, then only rebuild the content that changes, speeding up the local development process
-```bash
-make docs
+
+```shell
+make docs-changed
 ```
 
+> NOTE: navigation changes may not be correctly reflected without reloading the page in the web browser or carrying out a full `make docs` build

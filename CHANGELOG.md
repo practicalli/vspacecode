@@ -7,6 +7,9 @@
 - dev: practicalli standard CI workflows and configs
 - mkdocs: practicalli custom css rounded buttons
 - dev: set markdown and make as github repository language attributes
+
+## Changed
 - dev: use inclusive git ignore patters
 - readme: update CI status badges
 - dev: update makefile with practicalli standard task
+- readme: book description & content simplification
