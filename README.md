@@ -9,11 +9,12 @@
 
 ## Book status
 
-[![MegaLinter](https://github.com/practicalli/vspacecode/actions/workflows/megalinter.yaml/badge.svg)](https://github.com/practicalli/vspacecode/actions/workflows/megalinter.yaml)[![Publish Book](https://github.com/practicalli/vspacecode/actions/workflows/publish-book.yaml/badge.svg)](https://github.com/practicalli/vspacecode/actions/workflows/publish-book.yaml){target=_blank}
-[![pages-build-deployment](https://github.com/practicalli/vspacecode/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/practicalli/vspacecode/actions/workflows/pages/pages-build-deployment){target=_blank}
+[![Publish Book](https://github.com/practicalli/vspacecode/actions/workflows/publish-book.yaml/badge.svg)](https://github.com/practicalli/vspacecode/actions/workflows/publish-book.yaml) [![pages-build-deployment](https://github.com/practicalli/vspacecode/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/practicalli/vspacecode/actions/workflows/pages/pages-build-deployment)
 
-[![Ideas & Issues](https://img.shields.io/github/issues/practicalli/vspacecode?label=content%20ideas%20and%20issues&logoColor=green&style=for-the-badge)](https://github.com/practicalli/vspacecode/issues){target=_blank}
-[![Pull requests](https://img.shields.io/github/issues-pr/practicalli/vspacecode?style=for-the-badge)](https://github.com/practicalli/vspacecode/pulls){target=_blank}
+[![MegaLinter](https://github.com/practicalli/vspacecode/actions/workflows/megalinter.yaml/badge.svg)](https://github.com/practicalli/vspacecode/actions/workflows/megalinter.yaml) [![Scheduled Version Check](https://github.com/practicalli/vspacecode/actions/workflows/scheduled-version-check.yaml/badge.svg)](https://github.com/practicalli/vspacecode/actions/workflows/scheduled-version-check.yaml) [![Changelog Check](https://github.com/practicalli/vspacecode/actions/workflows/changelog-check.yaml/badge.svg)](https://github.com/practicalli/vspacecode/actions/workflows/changelog-check.yaml)
+
+[![Ideas & Issues](https://img.shields.io/github/issues/practicalli/vspacecode?label=content%20ideas%20and%20issues&logoColor=green&style=for-the-badge)](https://github.com/practicalli/vspacecode/issues)
+[![Pull requests](https://img.shields.io/github/issues-pr/practicalli/vspacecode?style=for-the-badge)](https://github.com/practicalli/vspacecode/pulls)
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/practicalli/vspacecode?style=for-the-badge)
 ![GitHub contributors](https://img.shields.io/github/contributors/practicalli/vspacecode?style=for-the-badge&label=github%20contributors)

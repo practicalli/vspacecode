@@ -8,3 +8,4 @@
 - mkdocs: practicalli custom css rounded buttons
 - dev: set markdown and make as github repository language attributes
 - dev: use inclusive git ignore patters
+- readme: update CI status badges
